@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Gewerke Einteilung Schüler</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JS-Module -->
+    <script defer src="js/ui.js"></script>
+    <script defer src="js/xlsx.js"></script>
+    <script defer src="js/logic.js"></script>
+    <script defer src="js/render.js"></script>
+</head>
+
+<body>
+
+    <h1>Gewerke-Einteilung Schüler</h1>
+
+    <!-- Excel Import -->
+    <section id="excel-section">
+        <h2>Excel laden</h2>
+        <input type="file" id="excelFile" accept=".xlsx">
+        <button id="loadExcelBtn">Laden</button>
+        <p id="excelStatus"></p>
+    </section>
+
+    <!-- Gewerke-Tabelle (Kapazitäten + Toggles) -->
+    <section id="config-section">
+        <h2>Gewerke konfigurieren</h2>
+
+        <!-- Tabelle wird per JS erzeugt -->
+        <div id="gewerkeTableContainer"></div>
+    </section>
+
+    <!-- Start Button -->
+    <section id="start-section">
+        <button id="startBtn">Verteilung starten</button>
+    </section>
+
+    <!-- Ergebnisse -->
+    <section id="results-section">
+        <h2>Ergebnisse</h2>
+
+        <div id="durchgang1"></div>
+        <div id="durchgang2"></div>
+        <div id="durchgang3"></div>
+        <div id="durchgang4"></div>
+
+        <h3>Schüler ohne Priorität</h3>
+        <div id="noPrioList"></div>
+    </section>
+
+</body>
+</html>
