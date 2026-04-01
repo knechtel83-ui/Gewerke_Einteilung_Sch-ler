@@ -22,7 +22,7 @@
     <section id="excel-section">
         <h2>Excel laden</h2>
         <input type="file" id="excelFile" accept=".xlsx">
-        <button id="loadExcelBtn">Laden</button>
+        document.getElementById("loadExcelBtn").addEventListener("click", loadExcel);
         <p id="excelStatus"></p>
     </section>
 
